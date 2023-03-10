@@ -61,33 +61,49 @@ func _get(property : String):
 func _set(property : String, val) -> bool:
 	if property == "project_settings/viewport_width":
 		_set_viewport_width(val)
+		return true
 	if property == "project_settings/viewport_height":
 		_set_viewport_height(val)
+		return true
 	if property == "project_settings/window_width_override":
 		_set_window_width_override(val)
+		return true
 	if property == "project_settings/window_height_override":
 		_set_window_height_override(val)
+		return true
 	if property == "project_settings/rendering_gpu_pixel_snap":
 		_set_rendering_gpu_pixel_snap(val)
+		return true
 	if property == "borderless_guides/guides_draw":
 		_set_guides_draw(val)
+		return true
 	if property == "borderless_guides/show_guides_landscape":
 		_set_show_guides_landscape(val)
+		return true
 	if property == "borderless_guides/show_guides_portrait":
 		_set_show_guides_portrait(val)
+		return true
 	if property == "borderless_guides/guides_offset":
 		_set_guides_offset(val)
+		return true
 	if property == "borderless_guides/guides_line":
 		_set_guides_line(val)
+		return true
 	if property == "borderless_guides/color_ratio_1_1":
 		_set_color_ratio_1_1(val)
+		return true
 	if property == "borderless_guides/color_ratio_3_2":
 		_set_color_ratio_3_2(val)
+		return true
 	if property == "borderless_guides/color_ratio_4_3":
 		_set_color_ratio_4_3(val)
+		return true
 	if property == "borderless_guides/color_ratio_16_9":
 		_set_color_ratio_16_9(val)
-	return true
+		return true
+
+	# fix set property default
+	return ._set(property, val)
 
 func _get_property_list() -> Array:
 	var properties = []
@@ -269,8 +285,11 @@ func _draw() -> void:
 	var size_ratio_3_4  : Vector2 = ratio_3_4  * scale_ratio_3_4  * scale_guide
 	var size_ratio_9_16 : Vector2 = ratio_9_16 * scale_guide
 
+	var auto_center : Vector2 = (base_size/2) - (size_ratio_1_1/2)
+	var position_offset : Vector2 = (size_ratio_1_1/2) + \
+										guides_offset + auto_center
 
-	var position_offset : Vector2 = ( (size_ratio_1_1)/2 ) + guides_offset
+
 
 	if show_guides_landscape:
 		draw_rect(

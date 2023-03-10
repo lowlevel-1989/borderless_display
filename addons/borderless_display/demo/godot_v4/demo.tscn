@@ -75,6 +75,7 @@ viewport_height = 256
 window_width_override = 512
 window_height_override = 512
 guides_draw = true
+color_ratio_1_1 = Color(1, 1, 0, 0.509804)
 
 [node name="TileMap" type="TileMap" parent="BorderlessDisplay"]
 tile_set = SubResource("TileSet_xpkrh")

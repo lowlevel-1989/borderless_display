@@ -1,34 +1,35 @@
 [remap]
 
 importer="texture"
-type="CompressedTexture2D"
-uid="uid://bnijoth7q3fyq"
-path="res://.godot/imported/buttondisplaytest.png-288309ce0582e400309fa4feaedafe87.ctex"
+type="StreamTexture"
+path="res://.import/buttondisplaytest.png-4ce4769c501bfcfa86eba27a9c7a4ea9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/borderless_display/demo/godot_v4/screenshot/buttondisplaytest.png"
-dest_files=["res://.godot/imported/buttondisplaytest.png-288309ce0582e400309fa4feaedafe87.ctex"]
+source_file="res://addons/borderless_display/demo/godot_v3/screenshot/buttondisplaytest.png"
+dest_files=[ "res://.import/buttondisplaytest.png-4ce4769c501bfcfa86eba27a9c7a4ea9.stex" ]
 
 [params]
 
 compress/mode=0
-compress/high_quality=false
 compress/lossy_quality=0.7
-compress/hdr_compression=1
+compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
-compress/channel_pack=0
-mipmaps/generate=false
-mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
 process/normal_map_invert_y=false
-process/hdr_as_srgb=false
-process/hdr_clamp_exposure=false
-process/size_limit=0
-detect_3d/compress_to=1
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

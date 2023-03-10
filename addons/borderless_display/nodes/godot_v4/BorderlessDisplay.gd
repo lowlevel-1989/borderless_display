@@ -152,7 +152,9 @@ func _draw() -> void:
 	var size_ratio_9_16 : Vector2 = ratio_9_16 * scale_guide
 
 
-	var position_offset : Vector2 = ( (size_ratio_1_1)/2 ) + guides_offset
+	var auto_center : Vector2 = (base_size/2) - (size_ratio_1_1/2)
+	var position_offset : Vector2 = (size_ratio_1_1/2) + \
+										guides_offset + auto_center
 
 	if show_guides_landscape:
 		draw_rect(
