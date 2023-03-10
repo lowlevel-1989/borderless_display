@@ -1,4 +1,4 @@
-# Borderless Display 1.0.0
+# Borderless Display 1.0.1
 
 1. Install directly from Godot Asset Library
 
