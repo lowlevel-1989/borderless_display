@@ -8,5 +8,5 @@
 - guides autocenter
 
 ### Changed
-- [godot v3] get window height override
-- [godot v3] set properties defaults
+- [godot v3] fix get window height override
+- [godot v3] fix set properties defaults
