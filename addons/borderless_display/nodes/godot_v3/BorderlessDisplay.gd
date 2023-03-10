@@ -35,7 +35,7 @@ func _get(property : String):
 	if property == "project_settings/window_width_override":
 		return _get_window_width_override()
 	if property == "project_settings/window_height_override":
-		return _get_window_width_override()
+		return _get_window_height_override()
 	if property == "project_settings/rendering_gpu_pixel_snap":
 		return _get_rendering_gpu_pixel_snap()
 	if property == "borderless_guides/guides_draw":
