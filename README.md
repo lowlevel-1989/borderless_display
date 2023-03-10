@@ -1,4 +1,4 @@
-# Borderless Display 1.0.1
+# Borderless Display 1.0.1 ![Godot v4.x](https://img.shields.io/badge/Godot-v4.x-%23478cbf) ![Godot v3.x](https://img.shields.io/badge/Godot-v3.x-%23478cbf)
 
 1. Install directly from Godot Asset Library
 
@@ -18,37 +18,3 @@ or
 
 - ButtonDisplayTest, New node for testing with multiple resolutions.
 
-### support Godot v3
-
-file plugin.gd
-```gdscript
-# Seguir instrucciones para agregar soporte a godot v3
-@tool  # <- Comentar   @tool para godot v3
-
-# tool # <- Descomentar tool para godot v3
-
-extends EditorPlugin
-
-func _enter_tree() -> void:
-    pass
-
-
-func _exit_tree() -> void:
-	pass
-```
-leave it this way
-```gdscript
-# Seguir instrucciones para agregar soporte a godot v3
-# @tool  # <- Comentar   @tool para godot v3
-
-tool # <- Descomentar tool para godot v3
-
-extends EditorPlugin
-
-func _enter_tree() -> void:
-    pass
-
-
-func _exit_tree() -> void:
-	pass
-```
