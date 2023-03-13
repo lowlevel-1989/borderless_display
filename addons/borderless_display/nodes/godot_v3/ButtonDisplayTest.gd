@@ -1,12 +1,13 @@
 tool
 extends MenuButton
 
-class_name  ButtonDisplayTest
-
 var WINDOW_SIZE : Array
 
 func _ready() -> void:
 	text = "Window Display (test)"
+	if Engine.is_editor_hint():
+		text = "Viewport Resolution"
+
 	flat = false
 
 	var popup : PopupMenu = get_popup()
@@ -52,8 +53,14 @@ func _ready() -> void:
 
 func _on_button_pressed(id : int ) -> void:
 	if id < WINDOW_SIZE.size():
-		OS.set_window_size(WINDOW_SIZE[id])
+		if Engine.is_editor_hint():
+			ProjectSettings.set_setting(
+				"display/window/size/width",  WINDOW_SIZE[id].x)
+			ProjectSettings.set_setting(
+				"display/window/size/height", WINDOW_SIZE[id].y)
+			return
 
+		OS.set_window_size(WINDOW_SIZE[id])
 		# fix godot v4 window resize
 		# get_viewport().set_size(DisplayServer.window_get_size())
 		get_viewport().set_size(WINDOW_SIZE[id])

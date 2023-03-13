@@ -1,8 +1,6 @@
 tool
 extends Node2D
 
-class_name BorderlessDisplay
-
 var viewport  : Viewport
 var base_size : Vector2
 
