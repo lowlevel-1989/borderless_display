@@ -1,4 +1,4 @@
-# Borderless Display 1.0.1 ![Godot v4.x](https://img.shields.io/badge/Godot-v4.x-%23478cbf) ![Godot v3.x](https://img.shields.io/badge/Godot-v3.x-%23478cbf)
+# Borderless Display 1.1.0 ![Godot v4.x](https://img.shields.io/badge/Godot-v4.x-%23478cbf) ![Godot v3.x](https://img.shields.io/badge/Godot-v3.x-%23478cbf)
 
 1. Install directly from Godot Asset Library
 
